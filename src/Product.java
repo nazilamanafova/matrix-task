@@ -2,11 +2,12 @@ public class Product {
     private String name;
     private double price;
     private String category;
+    private String brand;
 
-    public Product(String name, double price, String category) {
+    public Product(String name, double price, String category, String brand) {
         this.name = name;
         this.price = price;
-        this.category = category;
+        this.brand = brand;
     }
 
     public String getName() {
@@ -31,5 +32,13 @@ public class Product {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 }
